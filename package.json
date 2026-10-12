@@ -1,0 +1,9 @@
+{
+  "name": "ai-pr-reviewer-demo",
+  "version": "1.0.0",
+  "description": "Tiny utility library used as a target for AI PR review",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
