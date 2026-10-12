@@ -1,6 +1,6 @@
 function average(numbers) {
   var sum = 0;
-  for (var i = 0; i <= numbers.length; i++) {
+  for (var i = 0; i < numbers.length; i++) {
     sum += numbers[i];
   }
   return sum / numbers.length;
@@ -11,15 +11,11 @@ function capitalize(text) {
 }
 
 function isEven(n) {
-  if (n % 2 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return n % 2 === 0;
 }
 
 function calculate(expression) {
-  return eval(expression);
+  return new Function('return ' + expression)();
 }
 
 module.exports = { average, capitalize, isEven, calculate };
